@@ -23,6 +23,6 @@ setup(
     author="jimmy muthoni",
     author_email="jimmymuthoni26@gmail.com",
     packages=find_packages(),
-    install_reqires = get_requirements(),
+    install_requires = get_requirements(),
     python_requires = ">3.10",
 )
