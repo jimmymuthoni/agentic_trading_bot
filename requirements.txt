@@ -9,5 +9,6 @@ fastapi[all]
 uvicorn
 langchain-pinecone
 pypdf
+langchain_groq
 
 -e .
