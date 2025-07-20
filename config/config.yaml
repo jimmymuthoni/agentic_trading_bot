@@ -1,0 +1,22 @@
+vector_db:
+  index_name: "trading-bot"
+
+retriever:
+  top_k: 3
+  score_threshold: 0.5
+
+embedding_model:
+  provider: "huggingface"
+  model_name: "all-MiniLM-L6-v2"
+
+llm:
+  google:
+    provider: "google"
+    model_name: "gemini-1.5-pro"
+  groq:
+    provider: "groq"
+    model_name: "deepseek-r1-distill-llama-70b"
+
+tools:
+  tavily:
+    max_results: 5
