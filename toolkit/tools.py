@@ -30,3 +30,13 @@ def retiever_tool(question):
     )
 
     return retriever
+
+tavilytool = TavilySearchResults(
+    max_results = config["tools"]["tavily"]["max_results"],
+    depth = "advanced",
+    include_answers = True,
+    include_raw_content = True,
+
+)
+
+financials_tools = PolygonFinancials(api_wrapper=api_wraper)
