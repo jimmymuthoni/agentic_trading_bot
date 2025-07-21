@@ -10,5 +10,6 @@ uvicorn
 langchain-pinecone
 pypdf
 langchain_groq
+ipykernel
 
 -e .
