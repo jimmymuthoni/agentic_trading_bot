@@ -12,7 +12,7 @@ from utils.config_loader import load_config
 from pinecone import ServerlessSpec, Pinecone
 from uuid import uuid4
 from custom_exception.exceptions import TradingBotException
-
+load_dotenv()
 
 #clas to handle documents loading, transformation and ingestion into pinecone vector store
 class DataIngestion:
@@ -30,7 +30,7 @@ class DataIngestion:
         try:
             load_dotenv()
             required_vars = ["HUGGINGFACE_TOKEN", "PINECONE_API_KEY"]
-            missing_vars = [var for var in required_vars if not os.getenv(var) is None]
+            missing_vars = [var for var in required_vars if not os.getenv(var)]
             if missing_vars:
                 raise EnvironmentError(f"Missing environment variables: {missing_vars}")
             
@@ -81,8 +81,8 @@ class DataIngestion:
             if index_name not in [i.name for i in pinecone_client.list_indexes()]:
                 pinecone_client.create_index(
                     name = index_name,
-                    dimension = 768,
-                    metric = "cousine",
+                    dimension = 3072,
+                    metric = "cosine",
                     spec = ServerlessSpec(cloud="aws", region="us-east-1"),
                 )
 
