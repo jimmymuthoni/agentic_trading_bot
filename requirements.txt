@@ -11,5 +11,7 @@ langchain-pinecone
 pypdf
 langchain_groq
 ipykernel
+sentence-transformer
+numpy
 
 -e .
