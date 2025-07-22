@@ -29,7 +29,7 @@ async def upload_files(files: List[UploadFile] = File(...)):
 async def query_chatbot(request: QuestionRequest):
     try:
         graph_service = GraphBuilder()
-        graph_service.build()
+        graph_service.graph_building()
         graph = graph_service.get_graph()
         messages={"messages": [request.question]}
         
