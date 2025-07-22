@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from custom_exception import TradingBotException
+from custom_exception.exceptions import TradingBotException
 import sys
 
 BASE_URL = "http://localhost:8000" 
