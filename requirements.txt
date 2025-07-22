@@ -11,7 +11,10 @@ langchain-pinecone
 pypdf
 langchain_groq
 ipykernel
-sentence-transformer
+sentence-transformers
 numpy
+langchain-tavily
+transformers
+langchain_openai
 
 -e .
