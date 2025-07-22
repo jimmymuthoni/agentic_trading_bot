@@ -1,6 +1,6 @@
 import os
 from langchain.tools import tool
-from langchain_community.tools import TavilySearchResults
+from langchain_tavily import TavilySearch
 from langchain_community.tools.polygon.financials import PolygonFinancials
 from langchain_community.utilities.polygon import PolygonAPIWrapper
 from data_models.models import RagToolSchema
@@ -30,7 +30,7 @@ def retiever_tool(question):
 
     return retriever
 
-tavilytool = TavilySearchResults(
+tavilytool = TavilySearch(
     max_results = config["tools"]["tavily"]["max_results"],
     depth = "advanced",
     include_answers = True,
