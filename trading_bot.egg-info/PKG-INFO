@@ -4,6 +4,16 @@ Version: 0.0.1
 Author: jimmy muthoni
 Author-email: jimmymuthoni26@gmail.com
 Requires-Python: >3.10
+Requires-Dist: l
+Requires-Dist: a
+Requires-Dist: n
+Requires-Dist: g
+Requires-Dist: c
+Requires-Dist: h
+Requires-Dist: a
+Requires-Dist: i
+Requires-Dist: n
 Dynamic: author
 Dynamic: author-email
+Dynamic: requires-dist
 Dynamic: requires-python
