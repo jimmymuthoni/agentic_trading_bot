@@ -10,9 +10,13 @@ An intelligent chatbot designed for comprehensive stock market analysis through 
 - **Real-time Analysis**: Get instant insights from your uploaded trading materials
 - **Trading Education**: Learn about various trading concepts like stop-limit orders, NIFTY 50, and more
 
-## 🛠️ Technology Stack
+### Technology Stack
 
 - **Frontend**: Streamlit.
 - **Backend**: Document processing and storing the knowledge in Pinecone vector db for retieval.
 - **File Support**: PDF, DOCX formats
 - **Chat System**: Real-time conversational AI for stock market queries
+
+- ![Agent Architecture](./output.png)
+
+- The tools are financial tools from polygon, retieral tool(using pinecone), tavilty tool. Chatbot intearact with the tools for market analysis.
