@@ -17,6 +17,10 @@ An intelligent chatbot designed for comprehensive stock market analysis through 
 - **File Support**: PDF, DOCX formats
 - **Chat System**: Real-time conversational AI for stock market queries
 
-- ![Agent Architecture](./output.png)
+ ![Agent Architecture](./output.png)
 
 - The tools are financial tools from polygon, retieral tool(using pinecone), tavilty tool. Chatbot intearact with the tools for market analysis.
+
+ ### Agent in action:
+  
+- ![Agent](https://github.com/jimmymuthoni/agentic_trading_bot/blob/d521576d9569bc6f0852045518a6a9e3e746ffa7/STOCK.png)
